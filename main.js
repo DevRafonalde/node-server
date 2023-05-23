@@ -1,5 +1,6 @@
 const cors = require('cors');
 const express = require('express');
+const porta = 6341;
 
 const {app, BrowserWindow, Menu, MenuItem} = require('electron');
 app.disableHardwareAcceleration();
@@ -84,7 +85,7 @@ function ExecutarServidor() {
   .then((response) => {console.log("then")})
   .catch(function (err) {
     console.log("catch")
-    let myserv = new MyServ(6341);
+    let myserv = new MyServ(porta);
   });
 }
 
@@ -105,7 +106,7 @@ function createWindow() {
   }));
 
   Menu.setApplicationMenu(menu);
-  win.loadURL('http://192.168.0.54:8605/Carregando.html');
+  win.loadURL('Pagina');
 }
 
 app.whenReady().then(createWindow).finally(ExecutarServidor);

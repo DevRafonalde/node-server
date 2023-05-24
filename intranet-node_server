@@ -1,0 +1,15 @@
+# Intranet Node (Termos técnicos)
+## Pedido e motivação
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ideia da aplicação é que aprimora a Intranet já desenvolvida anteriormente para utilizar ferramentas mais modernas e que possibilitam, com uma amplitude muito maior, melhorias de interface e de funcionalidades da aplicação.
+
+## Ferramentas utilizadas
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o desenvolvimento foram utilizados o JavaScript, Electron 24.3.1, Express 4.18.2, Node 18.16.0, Electron Packager 17.1.1 e a parte da Intranet hospedada no servidor.
+
+## Organização do código
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A programação de toda a aplicação está contida no arquivo `main.js`, dividido em classes diferentes.
+
+## Endpoints
+### `http://localhost:6341/comando?caminho=CAMINHODOPROGRAMA`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse endpoint serve para abrir o programa/pasta solicitado.<br>
+### `http://localhost:6341/isAlive`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse endpoint serve para verificar se a aplicação está rodando
